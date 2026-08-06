@@ -17,7 +17,7 @@ class Teacher:
         self.students.append(student)
 
     def print_students(self):
-        print(f"Учні вчителя: {self.first_name} {self.last_name} ")
+        print(f"Учні на уроці вчителя: {self.first_name} {self.last_name} ")
         if not self.students:
             print("No students")
         else:
@@ -60,22 +60,22 @@ def print_teacher(teacher_room):
         print(teacher.first_name, teacher.last_name, teacher.age, teacher.subject)
 
 
-print("Список викладачів:")
-print_teacher(teacher_room)
+# print("Список викладачів:")
+# print_teacher(teacher_room)
+#
+# print()
 
-print()
-
-print("Викладач предмета Math:")
-find_teacher(teacher_room, "Math")
-
-print()
-
-teacher1.print_students()
-print()
-teacher2.print_students()
-print()
-teacher3.print_students()
-
+# print("Викладач предмета Math:")
+# find_teacher(teacher_room, "Math")
+#
+# print()
+#
+# teacher1.print_students()
+# print()
+# teacher2.print_students()
+# print()
+# teacher3.print_students()
+#
 
 # Додати нове поле для вчителя, яке відповідає за предмет.
 # (1 тічер може викладати 1 ПРЕДМЕТ)

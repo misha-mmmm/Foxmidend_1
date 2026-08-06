@@ -22,10 +22,10 @@ class Lesson:
                 f"викладач: {self.teacher.first_name} {self.teacher.last_name}, "
                 f"учень: {self.student.first_name} {self.student.last_name}")
 
-
-print("First lesson:")
-lesson1 = Lesson(subject1, teacher1, student1)
-
-print(lesson1)
-print(lesson1.info())
-
+#
+# print("First lesson:")
+# lesson1 = Lesson(subject1, teacher1, student1)
+#
+# print(lesson1)
+# print(lesson1.info())
+#
