@@ -5,10 +5,10 @@ from Student import Student
 from Subject import Subject
 class School:
     def __init__(self, name):
-        self.name = name
-        self.students = []
-        self.teachers = []
-        self.lessons = []
+        self.name = name  # назва школи
+        self.students = []  # список студентів у школі
+        self.teachers = []  # список вчителів у школі
+        self.lessons = []  # список уроків у школі
 
 
     def add_student(self, student):
@@ -29,7 +29,7 @@ class School:
 
 
     def print_students(self):
-        print(f"Учні вчителя: {self.first_name} {self.last_name} ")
+        print(f"Учні школи {self.name}:")
         if not self.students:
             print("No students")
         else:
@@ -55,6 +55,29 @@ subject1 = Subject("Swimming lesson", "necessarily")
 subject2 = Subject("Math", "necessarily")
 subject3 = Subject("Sport", "necessarily")
 
+school = School("Моя Школа")
+
+school.add_student(student1)
+school.add_student(student2)
+school.add_student(student3)
+school.add_student(student4)
+school.add_student(student5)
+school.add_student(student6)
+school.add_student(student7)
+
+school.add_teacher(teacher1)
+school.add_teacher(teacher2)
+school.add_teacher(teacher3)
+
+lesson1 = Lesson(subject1, teacher1, student3)
+lesson2 = Lesson(subject2, teacher2, student2)
+lesson3 = Lesson(subject3, teacher3, student1)
+school.add_lesson(lesson1)
+school.add_lesson(lesson2)
+school.add_lesson(lesson3)
+
+school.print_students()
+print('всього учнів в школі: ',len(school.students))
 
 teacher1.add_student(student3)
 teacher1.add_student(student6)
