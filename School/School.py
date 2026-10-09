@@ -31,6 +31,14 @@ class School:
         if not found:
             print(f"Викладача предмета '{subject_name}' не знайдено")
 
+    def print_schedule(self):
+        print(f"Розклад уроків школи {self.name}:")
+        if not self.lessons:
+            print("Уроків поки немає")
+        else:
+            for lesson in self.lessons:
+                print(lesson.info())
+
     def add_student(self, student):
         self.students.append(student)
 
@@ -133,3 +141,5 @@ print("Teacher:", teacher3.first_name, teacher3.last_name)
 teacher3.print_students()
 
 print()
+
+school.print_schedule()
